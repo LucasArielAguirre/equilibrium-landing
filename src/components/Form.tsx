@@ -1,7 +1,9 @@
 
 import { useState } from "react";
+import { useLanguage } from "../lenguage/LanguageContext";
 
 export default function InfoRequestForm() {
+    const { t } = useLanguage();
   const [formData, setFormData] = useState({ name: "", email: "" });
   const [submitted, setSubmitted] = useState(false);
 
@@ -16,18 +18,18 @@ export default function InfoRequestForm() {
 
   return (
     <div className="w-full h-[500px]  flex flex-col justify-center items-center ">
-      <h1 className="text-4xl font-bold mb-5 bg-gradient-to-r from-white to-gray-500 bg-clip-text text-transparent">Request Information</h1>
+      <h1 className="text-4xl font-bold mb-5 bg-gradient-to-r from-white to-gray-500 bg-clip-text text-transparent">{t("formTitle")}</h1>
     <div className="max-w-md mx-auto p-15 bg-gradient-to-r from-white to-gray-500 rounded-2xl shadow-lg">
-      <h2 className="text-2xl font-semibold mb-4 text-center">Form</h2>
+      <h2 className="text-2xl font-semibold mb-4 text-center">{t("formSubtitle")}</h2>
       {submitted ? (
         <p className="text-green-400 font-medium text-center">
-          Thank you! We will send you more information soon.
+          {t("thanks")}
         </p>
       ) : (
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
             <label htmlFor="name" className="block text-sm font-medium text-gray-700">
-              Name
+              {t("name")}
             </label>
             <input
               type="text"
@@ -57,7 +59,7 @@ export default function InfoRequestForm() {
             type="submit"
             className="w-full bg-gradient-to-r from-gray-500 to-black text-white py-2 px-4 rounded-md hover:scale-105 transition-all duration-150 cursor-pointer"
           >
-            Send information
+            {t("send")}
           </button>
         </form>
       )}
