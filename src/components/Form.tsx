@@ -17,7 +17,7 @@ export default function InfoRequestForm() {
   };
 
   return (
-    <div className="w-full h-[500px]  flex flex-col justify-center items-center ">
+    <div className="w-full h-[500px]  flex flex-col justify-center items-center font-inter">
       <h1 className="text-4xl font-bold mb-5 bg-gradient-to-r from-white to-gray-500 bg-clip-text text-transparent">{t("formTitle")}</h1>
     <div className="max-w-md mx-auto p-15 bg-gradient-to-r from-white to-gray-500 rounded-2xl shadow-lg">
       <h2 className="text-2xl font-semibold mb-4 text-center">{t("formSubtitle")}</h2>

@@ -11,7 +11,7 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ icon, title, content }) => {
   return (
-    <div className="bg-[#030303] py-16 px-5 text-black text-xl shadow-lg shadow-gray-300/60 border border-white/10 rounded-sm hover:scale-105 cursor-pointer transition-all hover:shadow-gray-300/30 flex flex-col items-center justify-center w-full">
+    <div className="bg-[#030303] font-inter py-16 px-5 text-black text-xl shadow-lg shadow-gray-300/60 border border-white/10 rounded-sm hover:scale-105 cursor-pointer transition-all hover:shadow-gray-300/30 flex flex-col items-center justify-center w-full">
       <div className="w-full h-full flex justify-center items-center">{icon}</div>
       <h1 className="text-gray-300 text-center mb-4 text-2xl">{title}</h1>
       <p className="text-gray-300 text-center text-sm">{content}</p>

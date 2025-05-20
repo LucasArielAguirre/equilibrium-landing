@@ -3,7 +3,7 @@ import { useLanguage } from "../lenguage/LanguageContext"
 const Welcome = () => {
   const { t } = useLanguage();
   return (
-    <section className="w-full flex h-screen bg-black text-white items-center justify-center px-4">
+    <section className="w-full flex h-screen bg-black text-white items-center justify-center px-4 font-inter">
         <div className="max-w-4xl w-full space-y-8 text-center">
             <motion.h1 
             initial={{ opacity: 0, y: -50 }}
