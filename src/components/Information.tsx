@@ -1,6 +1,7 @@
 import * as motion from "motion/react-client"
 import Crypto from "../icons/Crypto"
 import { JSX } from "react";
+import Activities from "../icons/Activities";
 
 interface CardProps {
     icon:string | JSX.Element;
@@ -20,7 +21,7 @@ const Card: React.FC<CardProps> = ({ icon, title, content }) => {
 
 const cardsData = [
     {   
-        icon: "📊",
+        icon: <Activities/>,
         title: "Investment",
         content: "Learn about smart investment strategies"
     },
@@ -35,7 +36,7 @@ const cardsData = [
         content: "Understand stock market basics"
     },
     {
-        icon: <Crypto/  > ,
+        icon: <Crypto/> ,
         title: "Crypto",
         content: "Explore cryptocurrency opportunities"
     },

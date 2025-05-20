@@ -18,3 +18,4 @@ const Crypto: React.FC = () => (
 );
 
 export default Crypto;
+
