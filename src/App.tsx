@@ -4,6 +4,8 @@ import  Navbar  from "./components/Navbar";
 import Welcome from "./components/Welcome";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import Form from "./components/Form";
+
 
 function App() {
   return (
@@ -13,6 +15,7 @@ function App() {
        <Information />
        <About />
        <Contact/>
+       <Form/>
        <Footer/>
     </main>
   )
